@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:richlineinterface/utils/appBar.dart';
 import 'package:richlineinterface/utils/button3d.dart';
+import 'package:richlineinterface/utils/buttoncard.dart';
 import 'package:richlineinterface/utils/field_card.dart';
 
 class Register extends StatefulWidget {
@@ -68,30 +69,7 @@ class _RegisterState extends State<Register> {
                           hintText: "Password",
                           iconData: Icons.security,
                         ),
-                        Padding(
-                          padding: EdgeInsets.only(bottom: 20),
-                          child: Button3D(
-                            width: 270,
-                            style: StyleOf3dButton(
-                              borderRadius: BorderRadius.circular(20),
-                              width: 200,
-                              backColor: Colors.grey.shade900,
-                              topColor: Colors.grey.shade900,
-                              height: 100,
-                            ),
-                            onPressed: () {},
-                            child: Center(
-                              child: Text(
-                                "Register",
-                                style: GoogleFonts.openSans(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
+                        Button(label: "Register"),
                         Padding(
                           padding: EdgeInsets.only(bottom: 20),
                           child: Center(
